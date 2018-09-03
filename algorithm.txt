@@ -1,0 +1,15 @@
+1. get all courses
+2. for every course
+	paint course depending on status
+	get select course button,
+	add eventListener to select course button
+	when clicked, get course starts and end status
+		create a list depending on end and start status
+		add it to selected courses
+3. Get all selected coures
+	for each selected course, 
+	add event listener,
+	when clicked, remove course from selected courses and timeline.
+
+		
+	

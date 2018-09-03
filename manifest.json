@@ -1,0 +1,42 @@
+{  
+    "name":"Antagning+",
+    "version":"0.1",
+    "description":"None.",
+    "permissions":["storage"],
+    "background":{
+		"scripts":["background.js"],
+        "persistent":false
+    },
+    "page_action":{  
+        "default_popup":"popup.html",
+        "default_icon":{  
+            "16":"images/antagning.png",
+            "32":"images/antagning.png",
+            "48":"images/antagning.png",
+            "128":"images/antagning.png"
+        }
+    },
+    "content_scripts":[  
+        {  
+            "matches": ["https://www.antagning.se/*/search*"],
+            "js":	   ["jquery-2.2.4.min.js", "content.js", "script.js"],
+			"css":	   ["style.css"],
+			"run_at":  "document_idle"		
+
+        }
+    ],
+	
+	"web_accessible_resources": [
+		"content.js",
+		"script.js",
+		"style.css"
+	],
+	
+    "icons":{  
+        "16":"images/antagning.png",
+        "32":"images/antagning.png",
+        "48":"images/antagning.png",
+        "128":"images/antagning.png"
+    },
+    "manifest_version":2
+}
