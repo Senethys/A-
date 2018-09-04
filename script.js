@@ -38,16 +38,30 @@ function paintCourses() {
 
 //Adds a course to the timeline.
 var timeLineBindFunc = function addToTimeline(event) {
+	
+	//Get the button that fired the event.
 	var button = $(event.target);
 	console.log(button[0]);
+	//Get the TIME from the element that has the data. 
+	var startDate;
+	var endDate;
+	
+	
+	//Create li element that will display the time.
     var li = document.createElement("li");
+	
+	/*
 	var timeLine = document.createElement("ul");
 	li.className = "Week";
     timeLine.className = "Timeline";
 	//Add number of weeks to ul.
+	*/
 	
+	//Get the old faq window. 
 	var div_elements = document.getElementsByClassName("humany-toplist humany-guidelist humany-toplist humany-toplist-widget");
 	var  d1 = div_elements[0];
+	
+	//Append a "course to it".
     d1.appendChild(li);
     var span = document.createElement("SPAN");
     var removeBtn = document.createTextNode("\u00D7");
