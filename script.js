@@ -43,6 +43,11 @@ var timeLineBindFunc = function addToTimeline(event) {
 	var button = $(event.target);
 	console.log(button[0]);
 	//Get the TIME from the element that has the data. 
+	var root = button.parent().parent().parent();
+	var coursebasics = $(root).find(".coursebasics")[0];
+	console.log(coursebasics);
+
+	
 	var startDate;
 	var endDate;
 	

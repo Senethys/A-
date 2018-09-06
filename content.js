@@ -12,5 +12,5 @@ s.onload = function() {
 (document.head || document.documentElement).appendChild(s);
 //(document.head || document.documentElement).appendChild(barchartScript);
 console.log("Injected scripts");
-}, 10000);
+}, 5000);
 
